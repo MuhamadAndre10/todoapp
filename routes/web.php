@@ -23,4 +23,4 @@ Route::get('/', function () {
 // })->name('edit');
 
 Route::get('/edit/{id}', [EditController::class, 'index'])->name('edit');
-Route::put('/edit', [EditController::class, 'update'])->name('edit.update');
+Route::put('/edit/{id}', [EditController::class, 'update'])->name('edit.update');
