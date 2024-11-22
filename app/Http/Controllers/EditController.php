@@ -21,7 +21,7 @@ class EditController extends Controller
         $todo->todo = $request->todo;
         $todo->tanggal = $request->tanggal;
         $todo->jam = $request->time;
-        $todo->status = $request->status:
+        $todo->status = $request->status;
 
         $todo->save();
 
