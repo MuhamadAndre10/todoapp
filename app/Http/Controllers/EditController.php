@@ -19,8 +19,9 @@ class EditController extends Controller
         $todo = \App\Models\TodoList::find($id);
 
         $todo->todo = $request->todo;
-        $todo->tanggal = $request->date;
+        $todo->tanggal = $request->tanggal;
         $todo->jam = $request->time;
+        $todo->status = $request->status:
 
         $todo->save();
 
