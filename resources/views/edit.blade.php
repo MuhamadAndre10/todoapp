@@ -33,22 +33,22 @@
 
                 <div class="mb-3">
                     <label for="new_todo" class="form-label">Tugas</label>
-                    <input type="text" class="form-control" id="new_todo" value="{{ old('todo', $todo->todo) }}">
+                    <input type="text" class="form-control" id="new_todo" name="todo" value="{{ old('todo', $todo->todo) }}">
                 </div>
                 <div class="mb-3">
                     <label for="tanggal" class="form-label">Tanggal</label>
                     <input type="date" class="form-control" id="tanggal"
-                        value="{{ old('tanggal', $todo->tanggal) }}">
+                        value="{{ old('tanggal', $todo->tanggal) }}" name="tanggal" >
                 </div>
                 <div class="mb-3">
                     <label for="tanggal" class="form-label">Waktu</label>
-                    <input type="time" class="form-control" id="tanggal" value="{{ old('jam', $todo->jam) }}">
+                    <input type="time" class="form-control" id="tanggal" name="jam" value="{{ old('jam', $todo->jam) }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="tanggal" class="form-label">Status</label>
                     <input type="text" class="form-control" id="tanggal"
-                        value="{{ old('status', $todo->status) }}">
+                        value="{{ old('status', $todo->status) }}" name="status" >
                 </div>
 
                 <button type="submit" class="btn btn-primary">Update</button>
